@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Rudolph Flappy Flight</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+      
+      body {
+        cursor: default;
+        user-select: none;
+        -webkit-font-smoothing: antialiased;
+        overscroll-behavior: none;
+      }
+      
+      /* Retro Scrollbar */
+      ::-webkit-scrollbar {
+        width: 12px;
+        background: #f0f0f0;
+        border-left: 1px solid #ccc;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #3b82f6; 
+        border-radius: 6px;
+        border: 2px solid #f0f0f0;
+      }
+      
+      .font-retro {
+        font-family: 'VT323', monospace, sans-serif;
+      }
+      
+      /* Modern Soft Shadow */
+      .retro-shadow {
+        box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.2);
+      }
+      
+      .no-touch-highlight {
+        -webkit-tap-highlight-color: transparent;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.6",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
+</head>
+  <body class="overflow-hidden bg-slate-800 text-slate-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
